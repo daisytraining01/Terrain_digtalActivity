@@ -1,111 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Terrain">
-	<listeners>
-		<listener class-name="com.listener.TestNgListner" />
-	</listeners>
+	
 	<test name="jyoti_realDevice">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
 		<parameter name="platformName" value="Android" />
-		<parameter name="platformVersion" value="9" />
-		<parameter name="deviceName" value="Mi A1" />
-		<parameter name="udId" value="288a84740804" />
-		<parameter name="appPackage"
-			value="org.gnucash.android" />
-		<parameter name="appActivity" value=".ui.account.AccountsActivity" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="org.gnucash.android" />
+		<parameter name="appActivity"
+			value=".ui.account.AccountsActivity" />
 		<classes>
 			<class name="com.terrain.Jyoti" />
 
 		</classes>
 	</test> <!-- jyoti -->
-	
-<test name="Jackson_realDevice">
-        <parameter name="platformName" value="Android" />
-        <parameter name="platformVersion" value="8.1.0" />
-        <parameter name="deviceName" value="Moto G5 plus" />
-        <parameter name="udId" value="ZY223ZMR7B" />
-        <parameter name="appPackage" value="org.gnucash.android" />
-        <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity" />
-        <classes>
-            <class name="com.terrain.Jackson" />
-        </classes>
+
+	<test name="Jackson_realDevice">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="org.gnucash.android" />
+		<parameter name="appActivity"
+			value="org.gnucash.android.ui.account.AccountsActivity" />
+		<classes>
+			<class name="com.terrain.Jackson" />
+		</classes>
 	</test>
-	
-<test name="Parkavi_Test">
-  <parameter name="platformname" value="Android"></parameter>
-  <parameter name="platformversion" value="8"></parameter>
-  <parameter name="devicename" value="vivo 1804"></parameter>
-  <parameter name="udid" value="db18013"></parameter>
-  <parameter name="appPackage" value="org.gnucash.android"></parameter>
-  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
-  <parameter name="automationName" value="UiAutomator1"></parameter>
-    <classes>
-      <class name="com.terrain.Parkavi"/>
-    </classes>
-</test>
-	
-<test thread-count="5" name="elango-Test">
-  <parameter name="platformName" value="Android"> </parameter>
-  <parameter name="platformVersion" value="8.1.0"> </parameter>
-  <parameter name="deviceName" value="Redmi Note 5 Pro"> </parameter>
-  <parameter name="udid" value="42d41177"></parameter>
-  <parameter name="appPackage" value="org.gnucash.android"></parameter>
-  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
 
-    <classes>
-      <class name="com.appium.NewTest"/>
-    </classes>
-  </test> <!-- Test -->
-	
-<test  name="manni-Test">
-  <parameter name="platformName" value="Android"></parameter>
-    <parameter name="platformVersion" value="9"></parameter>
-      <parameter name="deviceName" value="Redmi"></parameter>
-        <parameter name="udId" value="4pguzp5sifcur4u8"></parameter>
-          <parameter name="appPackage" value="com.miui.calculator"></parameter>
-            <parameter name="appActivity" value="com.miui.calculator.cal.CalculatorActivity"></parameter>
-    <classes>
-      <class name="com.terrain.Mani"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="Parkavi_Test">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="org.gnucash.android"></parameter>
+		<parameter name="appActivity"
+			value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
+		<parameter name="automationName" value="UiAutomator1"></parameter>
+		<classes>
+			<class name="com.terrain.Parkavi" />
+		</classes>
+	</test>
 
-	<test  name="Vignesh-Test">
-  <parameter name="platformName" value="Android"></parameter> 
-    <parameter name="platformVersion" value="8"></parameter>
-      <parameter name="deviceName" value="Redmi"></parameter>
-        <parameter name="udId" value="4739b282"></parameter>
-          <parameter name="appPackage" value="com.miui.calculator"></parameter>
-            <parameter name="appActivity" value="com.miui.calculator.cal.CalculatorActivity"></parameter>
-            <parameter name="amount" value="1000"></parameter>
-    <classes>
-      <class name="mobiletesting.SampleTest"/>
-    </classes>
-  </test> <!-- Test -->
-	
+	<test name="elango-Test">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="org.gnucash.android"></parameter>
+		<parameter name="appActivity"
+			value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
 
- 
-    <test name="sugath-calc">
-	 <parameter name="global_count" value="10" />
-        <parameter name="number1"  value="30" />
-        <parameter name="number2"  value="5" />
-        <parameter name="multiply"  value="150" />
-        <classes>
-            <class name="com.qa.Tests.CalculatorTest"/>
-        </classes>
-    </test>
-	
-	
-  <test  name="swathi-Test">
-  <parameter name="platformname" value="Android"></parameter>
-  <parameter name="platformversion" value="1"></parameter>
-  <parameter name="devicename" value="oneplus 7"></parameter>
-  <parameter name="udid" value="c479f2af"></parameter>
-  <parameter name="appPackage" value="org.gnucash.android"></parameter>
-  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
-  <parameter name="automationName" value="UiAutomator1"></parameter>
-    <classes>
-      <class name="com.terrain.swathi"/>
-    </classes>
-  </test> <!-- Test -->
+		<classes>
+			<class name="com.appium.NewTest" />
+		</classes>
+	</test> <!-- Test -->
 
- 
+	<test name="manni-Test">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="com.miui.calculator"></parameter>
+		<parameter name="appActivity"
+			value="com.miui.calculator.cal.CalculatorActivity"></parameter>
+		<classes>
+			<class name="com.terrain.Mani" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test name="Vignesh-Test">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="com.miui.calculator"></parameter>
+		<parameter name="appActivity"
+			value="com.miui.calculator.cal.CalculatorActivity"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<classes>
+			<class name="mobiletesting.SampleTest" />
+		</classes>
+	</test> Test
+ -->
+
+
+	<!-- <test name="sugath-calc">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="global_count" value="10" />
+		<parameter name="number1" value="30" />
+		<parameter name="number2" value="5" />
+		<parameter name="multiply" value="150" />
+		<classes>
+			<class name="com.qa.Tests.CalculatorTest" />
+		</classes>
+	</test> -->
+
+
+	<test name="swathi-Test">
+		<parameter name="testName" value="Android" />
+		<parameter name="accessKey"
+			value="eyJ4cC51Ijo0NTU2OTcsInhwLnAiOjQ1NTY4OSwieHAubSI6Ik1UVTRPVE0yTnprMU1EQXlNdyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE5MDQ3Mjc5NTAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.9PEKvslTXNVQjibm_oLIBni8iknsIwo1etQfjBMQ8ME" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="8" />
+		<parameter name="deviceName" value="SM-G9600" />
+		<parameter name="udId" value="5a514c3841563398" />
+		<parameter name="appPackage" value="org.gnucash.android"></parameter>
+		<parameter name="appActivity"
+			value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
+
+		<classes>
+			<class name="com.terrain.swathi" />
+		</classes>
+	</test> <!-- Test -->
+
+
 </suite> <!-- Terrain -->
