@@ -30,7 +30,7 @@
         </classes>
 	</test>
 	
-	<test name="Parkavi_Test">
+<test name="Parkavi_Test">
   <parameter name="platformname" value="Android"></parameter>
   <parameter name="platformversion" value="8"></parameter>
   <parameter name="devicename" value="vivo 1804"></parameter>
@@ -41,5 +41,19 @@
     <classes>
       <class name="com.terrain.Parkavi"/>
     </classes>
+</test>
+	
+<test thread-count="5" name="elango-Test">
+  <parameter name="platformName" value="Android"> </parameter>
+  <parameter name="platformVersion" value="8.1.0"> </parameter>
+  <parameter name="deviceName" value="Redmi Note 5 Pro"> </parameter>
+  <parameter name="udid" value="42d41177"></parameter>
+  <parameter name="appPackage" value="org.gnucash.android"></parameter>
+  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
+
+    <classes>
+      <class name="com.appium.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
 
 </suite> <!-- Terrain -->
