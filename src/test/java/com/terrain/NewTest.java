@@ -1,4 +1,4 @@
-package com.appium;
+package com.terrain;
 
 import org.testng.annotations.Test;
 
