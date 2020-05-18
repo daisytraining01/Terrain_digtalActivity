@@ -55,5 +55,17 @@
       <class name="com.appium.NewTest"/>
     </classes>
   </test> <!-- Test -->
+	
+<test  name="manni-Test">
+  <parameter name="platformName" value="Android"></parameter>
+    <parameter name="platformVersion" value="9"></parameter>
+      <parameter name="deviceName" value="Redmi"></parameter>
+        <parameter name="udId" value="4pguzp5sifcur4u8"></parameter>
+          <parameter name="appPackage" value="com.miui.calculator"></parameter>
+            <parameter name="appActivity" value="com.miui.calculator.cal.CalculatorActivity"></parameter>
+    <classes>
+      <class name="com.terrain.Mani"/>
+    </classes>
+  </test> <!-- Test -->
 
 </suite> <!-- Terrain -->
