@@ -17,5 +17,17 @@
 
 		</classes>
 	</test> <!-- jyoti -->
+	
+<test name="Jackson_realDevice">
+        <parameter name="platformName" value="Android" />
+        <parameter name="platformVersion" value="8.1.0" />
+        <parameter name="deviceName" value="Moto G5 plus" />
+        <parameter name="udId" value="ZY223ZMR7B" />
+        <parameter name="appPackage" value="org.gnucash.android" />
+        <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity" />
+        <classes>
+            <class name="com.terrain.Jackson" />
+        </classes>
+	</test>
 
 </suite> <!-- Terrain -->
