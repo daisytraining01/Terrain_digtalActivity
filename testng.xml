@@ -92,4 +92,20 @@
             <class name="com.qa.Tests.CalculatorTest"/>
         </classes>
     </test>
+	
+	
+  <test  name="swathi-Test">
+  <parameter name="platformname" value="Android"></parameter>
+  <parameter name="platformversion" value="1"></parameter>
+  <parameter name="devicename" value="oneplus 7"></parameter>
+  <parameter name="udid" value="c479f2af"></parameter>
+  <parameter name="appPackage" value="org.gnucash.android"></parameter>
+  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
+  <parameter name="automationName" value="UiAutomator1"></parameter>
+    <classes>
+      <class name="com.terrain.swathi"/>
+    </classes>
+  </test> <!-- Test -->
+
+ 
 </suite> <!-- Terrain -->
