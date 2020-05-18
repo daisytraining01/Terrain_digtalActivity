@@ -82,4 +82,14 @@
   </test> <!-- Test -->
 	
 
+ 
+    <test name="sugath-calc">
+	 <parameter name="global_count" value="10" />
+        <parameter name="number1"  value="30" />
+        <parameter name="number2"  value="5" />
+        <parameter name="multiply"  value="150" />
+        <classes>
+            <class name="com.qa.Tests.CalculatorTest"/>
+        </classes>
+    </test>
 </suite> <!-- Terrain -->
