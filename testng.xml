@@ -29,5 +29,17 @@
             <class name="com.terrain.Jackson" />
         </classes>
 	</test>
+	
+	<test name="Parkavi_Test">
+  <parameter name="platformname" value="Android"></parameter>
+  <parameter name="platformversion" value="8"></parameter>
+  <parameter name="devicename" value="vivo 1804"></parameter>
+  <parameter name="udid" value="db18013"></parameter>
+  <parameter name="appPackage" value="org.gnucash.android"></parameter>
+  <parameter name="appActivity" value="org.gnucash.android.ui.account.AccountsActivity"></parameter>
+  <parameter name="automationName" value="UiAutomator1"></parameter>
+    <classes>
+      <class name="com.terrain.Parkavi"/>
+    </classes>
 
 </suite> <!-- Terrain -->
